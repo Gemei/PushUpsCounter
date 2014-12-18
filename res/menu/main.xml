@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_history"
+        android:icon="@drawable/chart"
+        android:orderInCategory="1"
+        android:showAsAction="never"
+        android:title="@string/menu_history"/>
+    <item
+        android:id="@+id/menu_logs"
+        android:icon="@drawable/log"
+        android:orderInCategory="2"
+        android:showAsAction="never"
+        android:title="@string/menu_logs"/>
+    <item
+        android:id="@+id/menu_help"
+        android:icon="@drawable/help"
+        android:orderInCategory="98"
+        android:showAsAction="never"
+        android:title="@string/menu_help"/>
+    <item
+        android:id="@+id/menu_settings"
+        android:icon="@drawable/settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_settings"/>
+    <item
+        android:id="@+id/menu_about"
+        android:icon="@drawable/about"
+        android:orderInCategory="99"
+        android:showAsAction="never"
+        android:title="@string/menu_about"/>
+
+</menu>

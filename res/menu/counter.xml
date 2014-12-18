@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_help"
+        android:icon="@drawable/help"
+        android:orderInCategory="99"
+        android:showAsAction="never"
+        android:title="@string/menu_help"/>
+    <item
+        android:id="@+id/menu_resetButton"
+        android:icon="@drawable/reset"
+        android:orderInCategory="1"
+        android:title="@string/menu_reset"/>
+    <item
+        android:id="@+id/menu_settings"
+        android:icon="@drawable/settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_settings"/>
+
+    <group
+        android:checkableBehavior="all"
+        android:orderInCategory="4" >
+        <item
+            android:id="@+id/menu_stayAwake"
+            android:title="@string/menu_sAwake"/>
+    </group>
+
+</menu>

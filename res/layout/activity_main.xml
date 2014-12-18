@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#565656"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#303030" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/sponsor"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+        <!-- AdView -->
+
+        <include layout="@layout/adview" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="50dp"
+        android:padding="6dp" >
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/start_workout_button"
+            android:onClick="startWorkout" >
+        </Button>
+
+        <!-- High Scores -->
+
+        <TextView
+            android:id="@+id/highScores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overall"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/highScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/highScores"
+            android:layout_marginLeft="10dp"
+            android:text="@string/highScoreText"
+            android:textColor="#6e91d2" />
+
+        <TextView
+            android:id="@+id/caloriesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/highScoreText"
+            android:layout_marginLeft="10dp"
+            android:text="@string/caloriesText"
+            android:textColor="#ffa500" />
+
+        <!-- Daily High Scores -->
+
+        <TextView
+            android:id="@+id/dailyHighScores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/caloriesText"
+            android:layout_marginTop="10dp"
+            android:text="@string/daily"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/DailyHighScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dailyHighScores"
+            android:layout_marginLeft="10dp"
+            android:text="@string/highScoreText"
+            android:textColor="#6e91d2" />
+
+        <TextView
+            android:id="@+id/DailyCaloriesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/DailyHighScoreText"
+            android:layout_marginLeft="10dp"
+            android:text="@string/caloriesText"
+            android:textColor="#ffa500" />
+
+        <!-- Time -->
+
+        <TextView
+            android:id="@+id/TimeHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/DailyCaloriesText"
+            android:layout_marginTop="10dp"
+            android:text="@string/TimeText"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/TimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TimeHeader"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffa500" />
+    </RelativeLayout>
+
+    <com.devspark.sidenavigation.SideNavigationView
+        android:id="@+id/side_navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

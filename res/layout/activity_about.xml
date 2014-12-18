@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#565656"
+    android:padding="6dp"
+    tools:context=".About" >
+
+    <ImageView
+        android:id="@+id/exoticsLogo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/logo_alt"
+        android:src="@drawable/exoticslogo" />
+
+    <TextView
+        android:layout_below="@id/exoticsLogo"
+        android:paddingTop="20dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aboutText" />
+
+</RelativeLayout>
